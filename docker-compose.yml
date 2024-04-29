@@ -1,0 +1,16 @@
+services:
+  development:
+    build: .
+    volumes:
+      - .:/home/SLT_AI_Developmen
+    stdin_open: true 
+    tty: true
+    #command: pip3 list
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            count: all
+            capabilities: [gpu]
+    
