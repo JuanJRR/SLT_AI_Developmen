@@ -38,8 +38,8 @@ tensor_gpu = torch.rand(22, 30, 1920, 1080, 3).to(device)
 print("tensor: {0}".format(tensor_gpu.size()))
 additional_info(id_device)
 
-
 fin_gpu = time.time()
+
 print("--------------- Execution time ------------")
 print("Time: {0} seg".format(fin_gpu-inicio_gpu)) 
 
@@ -53,8 +53,8 @@ print("-----------------------------------------")
 tensor_cpu = torch.rand(22, 30, 1920, 1080, 3).to(device)
 print("tensor: {0}".format(tensor_cpu.size()))
 
-
 fin_cpu = time.time()
+
 print("--------------- Execution time ------------")
 print("Time: {0} seg".format(fin_cpu-inicio_cpu))
 
