@@ -8,6 +8,7 @@ ipykernel==6.29.4
 #Graphics
 matplotlib==3.8.4
 plotly==5.21.0
+#PyQt6==6.7
 
 #Arrays
 numpy==1.26.4

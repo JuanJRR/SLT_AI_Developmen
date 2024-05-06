@@ -32,7 +32,8 @@
 				"ms-python.python",
 				"ms-python.debugpy",
 				"ms-toolsai.tensorboard",
-				"redhat.vscode-yaml"
+				"redhat.vscode-yaml",
+				"njpwerner.autodocstring"
 			]
 		}
 	},
