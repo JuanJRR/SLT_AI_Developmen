@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-
+import time
 
 class VideoSignatureUtilities:
     def __init__(self, resolution: int = 144, color: int = 0) -> None:
@@ -59,3 +59,12 @@ class VideoSignatureUtilities:
         data_frames = np.asarray(data_frames)
 
         return data_frames
+    
+    def view_signature(self, data_frames: np.ndarray) -> None:
+        for frame in data_frames:
+            time.sleep(0.04)
+            cv2.imshow('Signature', frame)
+            if cv2.waitKey(1) == ord('q'):
+                break
+
+        cv2.destroyAllWindows()
